@@ -29,7 +29,7 @@ const setImage = () => {
 const checkStatus = () => {
     if (!gameStatus) {
         contentAfter.style.display = "none";
-        contentAfter.style.display = "block";
+        contentCount.style.display = "block";
         putTheValue();
     }
     else {
@@ -39,7 +39,7 @@ const checkStatus = () => {
 }
 const putTheValue = () => {
     let mealCost = randNum();
-    amount.textContent = mealCost;
+    amount.textContent = "$"+mealCost;
 }
 
 const initialise = () => {
