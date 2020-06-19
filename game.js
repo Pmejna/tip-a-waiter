@@ -4,16 +4,20 @@ const contentCount = document.querySelector('.content__count');
 const contentAfter = document.querySelector('.content__after');
 const amount = document.querySelector('.content__amount span');
 
+const input = document.querySelector('.content__tipForm input');
+const inputBtn = document.querySelector('.content__tipForm button');
+
+const scorePts = document.querySelector('.score__points');
+
 let gameStatus = 0;
 let result = 'start';
+let score = 0;
 let randNum = () => Math.floor(Math.random()*1000);
 
 const setImage = () => {
     switch (result) {
         case 'start':
             waiterImg.src = "/img/group 2.png";
-
-            console.log("weszlo");
             break;
         case 'low':
             waiterImg.src = "/img/group 3.png";
@@ -42,10 +46,35 @@ const putTheValue = () => {
     amount.textContent = "$"+mealCost;
 }
 
+const checkTheInput = () => {
+    
+}
+
+const scoreRender = () => {
+    scorePts.textContent = score;
+}
+
 const initialise = () => {
     setImage();
+    scoreRender();
     checkStatus();
 }
 
+const setCorrectTip  = () => {
+    
+}
 
+const changeToNum = () => {
+    numberGiven = Number(input.value);
+    console.log(numberGiven);
+    if (input.value !== '' && !isNaN(numberGiven)) {
+        console.log(`Twoj numer to: ${numberGiven}`);
+    }
+    else {console.log('Podaj jakis numer')}
+}
+
+
+inputBtn.addEventListener('click', function () {
+    changeToNum();
+})
 initialise();
