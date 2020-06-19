@@ -93,7 +93,6 @@ const setCorrectTip  = () => {
     const isCorrect = (minTip, maxTip) => {
         if (numberGiven > minTip && numberGiven < maxTip) {
             result = 'good';
-            console.log('Good');
             score++;
             scoreRender();
             gameStatus = 1;
@@ -101,7 +100,6 @@ const setCorrectTip  = () => {
             setImageTxt();
         }
         else if (numberGiven < minTip) {
-            console.log('Not enough');
             result = 'low';
             score--;
             scoreRender();
@@ -110,7 +108,6 @@ const setCorrectTip  = () => {
             setImageTxt();
         }
         else {
-            console.log('Too much');
             result = 'high';
             score--;
             scoreRender();
@@ -124,12 +121,10 @@ const setCorrectTip  = () => {
 
 const changeToNum = () => {
     numberGiven = Number(input.value);
-    console.log(numberGiven);
     if (input.value !== '' && !isNaN(numberGiven)) {
-        console.log(`Twoj numer to: ${numberGiven}`);
         setCorrectTip();
     }
-    else {console.log('Podaj jakis numer')}
+    else {}
 }
 
 
