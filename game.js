@@ -135,13 +135,13 @@ class Game {
     }
 
     setListerners = () => {
-        inputBtn.addEventListener('click', function () {
-            game.changeToNum();
+        inputBtn.addEventListener('click', () => {
+            this.changeToNum();
         })
-        nextBtn.addEventListener('click', function () {
-            game.gameStatus = 0;
-            game.result = "start";
-            game.initialise();
+        nextBtn.addEventListener('click', () => {
+            this.gameStatus = 0;
+            this.result = "start";
+            this.initialise();
         })
     }
 
