@@ -92,6 +92,8 @@ button {
     background-color: black;
     align-items: center;
     padding-left: 70px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .content__title {

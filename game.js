@@ -65,6 +65,18 @@ const checkTheInput = () => {
 }
 
 const scoreRender = () => {
+    const scoreColor = () => {
+        if (score < 0) {
+            scorePts.style.color = "red";
+        }
+        else if (score > 0) {
+            scorePts.style.color = "#32E925";
+        }
+        else {
+            scorePts.style.color = "white";
+        }
+    }
+    scoreColor();
     scorePts.textContent = score;
 }
 
