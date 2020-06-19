@@ -93,3 +93,18 @@ button {
     align-items: center;
     padding-left: 70px;
 }
+
+.content__title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.content__subtitle {
+    text-align: center;
+}
+.content__after {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
