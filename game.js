@@ -21,22 +21,22 @@ let cost = 0;
 const setImageTxt = () => {
     switch (result) {
         case 'start':
-            waiterImg.src = "/img/group 2.png";
+            waiterImg.src = "/img/Group 2.png";
             break;
         case 'low':
-            waiterImg.src = "/img/group 5.png";
+            waiterImg.src = "/img/Group 5.png";
             title.style.color = "red";
             title.textContent = "NOT ENOUGH!";
             subtitle.textContent = "He might be a homeless soon";
             break;
         case 'good':
-            waiterImg.src = "/img/group 3.png";
+            waiterImg.src = "/img/Group 3.png";
             title.style.color = "#32E925";
             title.textContent = "WELL DONE!";
             subtitle.textContent = "You gave the right tip!";
             break;
         case 'high':
-            waiterImg.src = "/img/group 4.png";
+            waiterImg.src = "/img/Group 4.png";
             title.style.color = "red";
             title.textContent = "TOO MUCH";
             subtitle.textContent = "Other waiters hate him now!";
